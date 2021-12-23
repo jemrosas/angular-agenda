@@ -1,0 +1,18 @@
+<mat-list-item class="mat-elevation-z2">
+  <h3 matLine class="h3">{{ user.name | capitalize }} {{ user.surname | capitalize }}</h3>
+  <p matLine class="p">{{ user.age }} años</p>
+  <p matLine class="p">{{ user.idCard | uppercase }}</p>
+  <p matLine class="p">{{ user.birthdate | date: 'shortDate' }}</p>
+  <p matLine class="p">{{ user.favouriteColor | capitalize }}</p>
+  <p matLine class="p">{{ user.gender }}</p>
+
+  <button mat-stroked-button color="primary" (click)="findUser()">
+    Actualizar
+    <mat-icon aria-hidden="true">create</mat-icon>
+  </button>
+  <button mat-stroked-button color="primary" (click)="removeUser()">
+    Eliminar
+    <mat-icon aria-hidden="true">delete</mat-icon>
+  </button>
+  <mat-divider></mat-divider>
+</mat-list-item>

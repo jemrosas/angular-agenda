@@ -1,0 +1,35 @@
+mat-form-field{
+  margin: 0em 0.5em 0em
+}
+
+mat-grid-tile:first-of-type{
+  padding-bottom: 6em;
+}
+
+mat-list{
+  margin-top: 2em;
+}
+
+/* Código para retirar las flechas del input numérico
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+.header{
+  background-color: rgb(61, 35, 85) !important;
+  height: 4em!important;
+}
+
+
+.title{
+  font-size: 2em!important;
+}
